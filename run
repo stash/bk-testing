@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+env
+ping -c 1 "$RHOST"
+exit 1
